@@ -2,7 +2,7 @@
     "manifest_version": 3,
     "name": "Lain Dancing",
     "version": "1.0",
-    "description": "Lain dancing random mode",
+    "description": "Lain Iwakura dancing random mode",
     "icons": { 
         "16": "icon16.png",
         "48": "icon48.png",
