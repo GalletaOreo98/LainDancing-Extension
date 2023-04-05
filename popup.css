@@ -1,0 +1,16 @@
+body {
+    background: #93b1ce;
+}
+
+#canvas {
+    background: #93b1ce;
+    display: block;
+    margin: auto;
+}
+
+#txt-vel {
+    justify-content: center;
+    display: flex;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
