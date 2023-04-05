@@ -9,18 +9,20 @@ const images = [
   '6.png',
 ];
 
-let interval = 150;
+let interval = 200; // Velocidad de frames
 
 const canvas = document.getElementById('canvas');
 const ctx = canvas.getContext('2d');
 const isMobile = window.matchMedia('(max-width: 768px)').matches;
 
+// Default canvas size 300px
 canvas.width = 300;
 canvas.height = canvas.width;
 
-
+// Execute main loop
 main();
 
+// Main loop function
 function main() {
   for (let i = 0; i < images.length; i++) {
     const image = new Image();
@@ -28,7 +30,7 @@ function main() {
     image.onload = () => {
       loadedImages++;
       if (loadedImages === images.length) {
-        let currentImageIndex = images.indexOf('3.png');
+        let currentImageIndex = images.indexOf('3.png'); // Start at frame 3 by default
         let  intervalId = setInterval(() => {
           let nextImageIndex;
           if (currentImageIndex === 0) {
